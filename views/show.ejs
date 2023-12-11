@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Details</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Show Post in details</h1>
+    <div class="post">
+        <h3> Post id : <%= post.id %> </h3>
+        <h2>UserName : @<%= post.username %> </h2>
+        <img height="500px" src="<%= post.imgUrl %>" alt="img">
+        <h3>Likes: <%= post.Likes%> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Comments: <%= post.Comments %> </h3>
+        <button><a href="http://localhost:8080/posts">Back</a></button>
+    </div>
+</body>
+</html>
